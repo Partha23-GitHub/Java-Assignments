@@ -10,12 +10,12 @@ public class VowelsConsonants {
         countVowelsConsonants(str.toLowerCase());
         System.out.println(vowels+" Vowels, "+consonants+ " Consonants ");
     }
-    static void countVowelsConsonants(String str){
-        for(int i = 0; i < str.length(); i++) {
-            if(str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
+    static void countVowelsConsonants(String string){
+        for(int i = 0; i < string.length(); i++) {
+            if(string.charAt(i) == 'a' || string.charAt(i) == 'e' || string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u') {
                 vowels++;
             }
-            else if(str.charAt(i) >= 'a' && str.charAt(i)<='z') {
+            else if(string.charAt(i) >= 'a' && string.charAt(i)<='z') {
                 consonants++;
             }
         }
